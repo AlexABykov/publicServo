@@ -8,7 +8,7 @@
 
 int main() {
   ServoModel servo;
-  char const *m = servo.pMessageHeader;
+  string_t m = servo.pMessageHeader;
   std::cout << m << "Counter-Speeds image file generator started." << std::endl;
   std::cout << m << "size of void pointer: " << sizeof(void *) * 8 << " bits" << std::endl;
   std::cout << m << "loaded settings." << std::endl;
