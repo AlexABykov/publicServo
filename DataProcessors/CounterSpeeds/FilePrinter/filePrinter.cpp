@@ -95,7 +95,7 @@ void FilePrinter::finishFile() {
     rOutFile << "\n// total data size: " << totalBytes << " ";
 
     if (kilo) {
-      rOutFile << "Kilo";
+      rOutFile << "kilo";
     }
 
     rOutFile << "Bytes\n";
