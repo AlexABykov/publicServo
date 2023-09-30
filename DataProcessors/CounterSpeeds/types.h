@@ -11,5 +11,6 @@ typedef unsigned short u16;
 typedef unsigned char u8;
 typedef float f32;
 typedef double d64;
+typedef char const * string_t;
 
 #endif
