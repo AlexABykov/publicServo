@@ -84,7 +84,7 @@ void FilePrinter::finishFile() {
     rOutFile << "};\n};\n";
     auto bufSize = ServoModel::bufferSize;
     d64 totalBytes = ((d64) bufSize - 1) * PowerModes::count * sizeof(s32);
-    // "bufferSize - 1" as the first element is omitted - it always contains zeroes
+    // "bufferSize - 1" as the first element is omitted - it always contains main zeroes
     bool kilo = false;
 
     if (totalBytes >= 1000) {
