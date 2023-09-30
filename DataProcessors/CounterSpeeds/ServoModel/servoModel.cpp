@@ -66,7 +66,7 @@ void ServoModel::updateState() {
 }
 
 void ServoModel::printInput() const {
-  char const *m = pMessageHeader;
+  string_t m = pMessageHeader;
   std::cout << m << "model number: #" << characteristics.modelNumber << std::endl;
   std::cout << m << "gaps count: " << (s32) posSensorSettings.gaps << ", quad encoder" << std::endl;
   std::cout << m << "one turn: " << (s32) posSensorSettings.gaps * (s32) posSensorSettings.gapDivisions << " quads"
