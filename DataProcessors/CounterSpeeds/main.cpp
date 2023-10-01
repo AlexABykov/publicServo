@@ -37,7 +37,7 @@ int main() {
 
   for (auto modeIdx = 0; modeIdx < powerModesCount; modeIdx++) {
     PowerModes *pM = &servo.powerModes;
-    pM->idx = modeIdx;
+    pM->setMode(modeIdx);
     std::cout << "\n" << m << "power mode idx = " << modeIdx << ", generating curves for current: "
               << pM->getCurrent_mA() << " mA" << std::endl;
 
