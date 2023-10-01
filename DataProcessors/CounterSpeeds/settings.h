@@ -18,6 +18,10 @@ struct PowerModes {
     static constexpr size_t count = sizeof(current_mA) / sizeof(current_mA[0]);
     size_t idx = 0;
 
+    void setMode(size_t m) {
+      idx = m;
+    }
+
     s32 getCurrent_mA() {
       return current_mA[idx];
     }
