@@ -32,7 +32,7 @@ void ServoModel::buildCurve() {
   totalTime = -dt; // because of negative time direction
 
   // SSD, other iterations of the first segment
-  for (s32 i = 1; i < iterations / 2; i++) {
+  for (auto i = 1; i < iterations / 2; i++) {
     updateState();
   }
 
