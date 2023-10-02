@@ -6,7 +6,7 @@
 using namespace std;
 
 struct FilePrinter {
-    char const *pFileName = "OutData/counterCurve.h";
+    string_t pFileName = "OutData/counterCurve.h";
     ofstream rOutFile;
     bool fileOpened = false;
 
