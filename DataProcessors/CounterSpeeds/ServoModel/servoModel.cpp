@@ -40,7 +40,7 @@ void ServoModel::buildCurve() {
   buffer[1].speed = speed; // just an unsigned speed for now
 
   // RUN, all iterations, first 2 points are already processed
-  for (s32 p = 2; p < bufferSize; p++) {
+  for (auto p = 2; p < bufferSize; p++) {
     for (s32 i = 0; i < iterations; i++) {
       updateState();
     }
