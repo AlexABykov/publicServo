@@ -41,7 +41,7 @@ void ServoModel::buildCurve() {
 
   // RUN, all iterations, first 2 points are already processed
   for (auto p = 2; p < bufferSize; p++) {
-    for (s32 i = 0; i < iterations; i++) {
+    for (auto i = 0; i < iterations; i++) {
       updateState();
     }
 
