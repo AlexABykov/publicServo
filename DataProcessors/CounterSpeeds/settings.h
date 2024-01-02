@@ -1,3 +1,5 @@
+#pragma once
+
 #include "types.h"
 #include "constants.h"
 
@@ -5,8 +7,6 @@
 #include "InData/Servo_0000/posSensorImage.h"
 #include "InData/Servo_0000/friction.h"
 #include "InData/Servo_0000/characteristics.h"
-
-#pragma once
 
 const s32 maxDelta = 108 * 2;
 const s32 deltaIterations = 100;
